@@ -1,0 +1,43 @@
+package de.jplag.cli;
+
+import static com.github.stefanbirkner.systemlambda.SystemLambda.catchSystemExit;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+
+
+
+class LanguageTest extends CommandLineInterfaceTest {
+
+    @Test
+    void testDefaultLanguage() {
+        buildOptionsFromCLI(CURRENT_DIRECTORY);
+        assertEquals(CommandLineArgument.DEFAULT_LANGUAGE_IDENTIFIER, options.language().getIdentifier());
+    }
+
+    @Test
+    void testInvalidLanguage() throws Exception {
+        String argument = buildArgument(CommandLineArgument.LANGUAGE, "Piet");
+        int statusCode = catchSystemExit(() -> buildOptionsFromCLI(argument, CURRENT_DIRECTORY));
+        assertEquals(1, statusCode);
+    }
+
+    @Test
+    void testLoading() {
+        var languages = LanguageLoader.getAllAvailableLanguages();
+        assertEquals(7, languages.size(), "Loaded Languages: " + languages.keySet());
+    }
+//
+
+    @Test
+    void testCustomSuffixes() {
+        List<String> suffixes = List.of("x", "y", "z");
+        String argument = buildArgument(CommandLineArgument.SUFFIXES, String.join(",", suffixes));
+        buildOptionsFromCLI(argument, CURRENT_DIRECTORY);
+        assertEquals(suffixes, options.fileSuffixes());
+    }
+
+}
