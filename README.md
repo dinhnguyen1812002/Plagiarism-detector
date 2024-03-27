@@ -37,6 +37,15 @@ Các chức năng:
 Màn hình chính
 ![image](https://github.com/dinhnguyen1812002/plagiarism-detector/assets/88964296/9a2ec160-ee06-4b51-aac7-224cbff1cd4d)
 
+Tổng quan
+![image](https://github.com/dinhnguyen1812002/plagiarism-detector/assets/88964296/c45d3fb2-30f8-41c2-809e-6a10b9f235e7)
+
+Màn hình so sánh
+![image](https://github.com/dinhnguyen1812002/plagiarism-detector/assets/88964296/cc43f2e5-a121-4dde-b7cd-59fbc1bf9c71)
+
+Quá Trình tạo file so sánh
+![Uploading image.png…]()
+
 
 
 [//]: # (```)
