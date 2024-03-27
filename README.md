@@ -33,6 +33,10 @@ Sử dụng java 17 và maven
    Run `mvn clean package assembly:single` từ thư mục gốc để đóng gói file jar.
 Sau khi chạy thì sẽ thấy plagiarism-detector.jar trong thư mục `cli/target`.
 
+Các chức năng:
+Màn hình chính
+![image](https://github.com/dinhnguyen1812002/plagiarism-detector/assets/88964296/9a2ec160-ee06-4b51-aac7-224cbff1cd4d)
+
 
 
 [//]: # (```)
