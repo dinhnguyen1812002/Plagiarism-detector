@@ -43,8 +43,9 @@ Tổng quan
 Màn hình so sánh
 ![image](https://github.com/dinhnguyen1812002/plagiarism-detector/assets/88964296/cc43f2e5-a121-4dde-b7cd-59fbc1bf9c71)
 
-Quá Trình tạo file so sánh
-![Uploading image.png…]()
+Tạo file so sánh
+![image](https://github.com/dinhnguyen1812002/plagiarism-detector/assets/88964296/b6d1bd17-e0ff-4b63-9ce8-480590e15746)
+
 
 
 
